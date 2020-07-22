@@ -14,20 +14,15 @@ f(4, 5);
 echo"\n";
 
 //3
-//うまくできませんでした。
 function xx($arr){
     $answer = $arr[0];
     for($i = 1; $i < count($arr); $i++){
-        $answer*$i = $c;
-        if($answer < $c){
-            $answer = $c;
-        }
+        $answer = $answer*$arr[$i];
     }
     return $answer;
 }
 $example2 = array(1, 3, 5, 7, 9);
-$result2 = xx($example2);
-//echo($result2."\n");
+echo xx($example2)."\n";
 
 
 //4
@@ -40,7 +35,7 @@ function max_array($arr){
     }
     return $max_number;
 }
-$example = [4,9,12,1,10,11];
+$example = array(4, 9, 12, 1, 10,11);
 $result = max_array($example);
 echo($result."\n");
 
@@ -49,7 +44,7 @@ echo($result."\n");
 $html = "<html><body><title>課題</title><h1>アイウエオ</h1></body></html>";
 $html_result = strip_tags($html);
 echo $html_result."\n";
-//arragy_push:1つ以上の要素を配列の最後に追加したい場合に使う。
+//array_push:1つ以上の要素を配列の最後に追加したい場合に使う。
 $fruits = ["apple", "melon", "pineapple"];
 array_push($fruits, "banana", "orange");
 print_r($fruits);
